@@ -1,0 +1,9 @@
+Perform the multiplication of 2 polynomials. Use both the regular O(n2) algorithm and the Karatsuba algorithm, and each in both the sequencial form and a parallelized form. Compare the 4 variants.
+
+The documentation will describe:
+
+the algorithms,
+the synchronization used in the parallelized variants,
+the performance measurements
+Bonus: do the same for big numbers.
+
