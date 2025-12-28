@@ -1,0 +1,17 @@
+# Simple DSM config
+# Sections: Nodes, Variables
+# Nodes: id host port
+# Variables: id initial groupCSV
+
+Nodes:
+#<node_num> <ip> <port>
+1 127.0.0.1 5001
+2 127.0.0.1 5002
+3 127.0.0.1 5003
+
+
+Variables:
+#<var> <initial_value> <subscriber1,subscriber2,...>
+1 0 1,2
+2 100 1,2,3
+3 3 1,2
