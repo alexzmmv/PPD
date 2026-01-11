@@ -22,6 +22,13 @@ public:
         for (int i = 0; i <= degree; ++i) coef[i] = 1; // deterministic for easier checks
         return Polynomial(coef);
     }
+    void print() const {
+        for (int i = 0; i <= 10; ++i) {
+            cout << coefficients[i] << "x^" << i;
+            if (i < degree()) cout << " + ";
+        }
+        cout << endl;
+    }
 };
 
 // CPU implementations (adapted from Lab5)
@@ -244,6 +251,8 @@ int main(int argc, char** argv) {
         MPI_Finalize();
         return 1;
     }
+    result.print();
+
 
     MPI_Barrier(MPI_COMM_WORLD);
     auto end = high_resolution_clock::now();

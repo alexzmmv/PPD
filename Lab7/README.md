@@ -98,3 +98,10 @@ Quick checks & troubleshooting
 Notes
 - For reliable benchmarking, run multiple repetitions and run the controller with isolated load.
 - If you only have 2 processes but Karatsuba needs 4, run the CPU version or use the regular MPI distribution.
+
+
+mpirun -np 4 ./lab7 regular-mpi 1000
+mpirun -np 4 ./lab7 karatsuba-mpi 1000
+
+./lab7 regular-cpu 1000
+./lab7 karatsuba-cpu 1000
