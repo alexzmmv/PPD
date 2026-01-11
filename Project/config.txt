@@ -1,0 +1,29 @@
+# ---- Simulation Parameters ----
+time_step = 0.01
+num_steps = 1000
+theta = 0.5
+softening = 0.01
+gravitational_constant = 1.0
+
+# ---- Window Parameters (for future OpenGL) ----
+window_width = 800
+window_height = 800
+
+# ---- Parallel Parameters ----
+num_threads = 1000000000
+
+# ---- Bodies ----
+# Format: id mass x y vx vy
+# Body visual radius = sqrt(mass)
+
+Bodies:
+1 100.0 0.0 0.0 0.0 0.0
+2 10.0 150.0 0.0 0.0 0.8
+3 10.0 -150.0 0.0 0.0 -0.8
+4 5.0 0.0 200.0 -0.6 0.0
+5 5.0 0.0 -200.0 0.6 0.0
+6 2.0 100.0 100.0 -0.4 0.4
+7 2.0 -100.0 -100.0 0.4 -0.4
+8 1.0 200.0 200.0 -0.3 0.3
+9 1.0 -200.0 200.0 0.3 0.3
+10 1.0 -200.0 -200.0 0.3 -0.3
