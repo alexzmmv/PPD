@@ -11,7 +11,7 @@ void printUsage(const char* programName) {
 
 int main(int argc, char* argv[]) {
     std::string configFile = "config.txt";
-    std::string outputFile = "output.txt";
+    std::string outputFile = "output_thr.txt";
     
     // Parse command line arguments
     if (argc >= 2) {
